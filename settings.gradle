@@ -1,3 +1,3 @@
 include ':logging'
-include ':app'
+include ':sample_app'
 rootProject.name = "Logg Demo"

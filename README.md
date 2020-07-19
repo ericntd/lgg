@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
-outpus
+outputs
 ```
 2020-07-17 16:51:35.421 17997-17997/app.ericn.loggdemo I/MainActivity: logg testing
 ```

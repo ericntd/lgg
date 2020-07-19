@@ -9,7 +9,7 @@ class DemoApplication : Application() {
         super.onCreate()
 
         if (BuildConfig.DEBUG) {
-            Logg.logger = TimberLogger
+//            Logg.logger = TimberLogger
         }
     }
 }

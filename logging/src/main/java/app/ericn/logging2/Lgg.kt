@@ -3,8 +3,8 @@ package app.ericn.logging2
 import android.annotation.SuppressLint
 import android.util.Log
 
-object Logg : Logger {
-    var logger: Logger? = null
+object Lgg : Logger {
+    private var logger: Logger? = null
 
     override fun v(message: String?, vararg args: Any?) {
         validateLogger()
@@ -116,5 +116,19 @@ object Logg : Logger {
         if (logger == null) {
             Log.w("Logg", "logger not set, logging will not work")
         }
+    }
+
+    fun setUp(provider: Provider) {
+        when (provider) {
+            Provider.TIMBER -> {
+                logger = TimberLogger
+            }
+            Provider.OTHER -> TODO()
+        }
+    }
+
+    enum class Provider {
+        TIMBER,
+        OTHER
     }
 }

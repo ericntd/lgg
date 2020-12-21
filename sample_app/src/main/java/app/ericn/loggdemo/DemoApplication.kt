@@ -1,7 +1,7 @@
 package app.ericn.loggdemo
 
 import android.app.Application
-import app.ericn.logging2.Logg
+import app.ericn.logging2.Lgg
 import app.ericn.logging2.TimberLogger
 
 class DemoApplication : Application() {
@@ -9,7 +9,7 @@ class DemoApplication : Application() {
         super.onCreate()
 
         if (BuildConfig.DEBUG) {
-//            Logg.logger = TimberLogger
+            Lgg.setUp(Lgg.Provider.TIMBER)
         }
     }
 }

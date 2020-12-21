@@ -6,7 +6,9 @@ More importantly, it gives you the flexibility to switch to another logging impl
 1. Copy and paste the `logging` module into your project
 2. Don't forget to add it to your `settings.gradle` and `app/build.gradle` (as a dependencies)
 3. 2 approaches
+
 **Approach #1 Decorator pattern - Logg.kt**
+
 Set it up
 ```kotlin
 class DemoApplication : Application() {
@@ -33,6 +35,7 @@ outputs
 2020-07-17 16:51:35.421 17997-17997/app.ericn.loggdemo I/MainActivity: logg testing
 ```
 **Approach #2 - Use dependency injection with Dagger for example**
+
 Provision
 ```kotlin
 @Module
